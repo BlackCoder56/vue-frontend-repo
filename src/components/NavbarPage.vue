@@ -1,11 +1,13 @@
 <template>
     <nav class="navbar">
         <div class="navbar-container">
-            <div class="navbar-logo">MyApp</div>
+            <div class="navbar-logo">               
+                    MyApp              
+                </div>
             <ul :class="['navbar-menu', {open: isMenuOpen}]">
-                <li class="navbar-item"><router-link to="/" class="navbar-link">Home</router-link></li>
-                <li class="navbar-item"><router-link to="/about" class="navbar-link">About</router-link></li>
-                <li class="navbar-item"><router-link to="/contact" class="navbar-link">Contact</router-link></li>
+                <li class="navbar-item"><router-link to="/" class="navbar-link" @click="closeMenu" >Home</router-link></li>
+                <li class="navbar-item"><router-link to="/about" class="navbar-link" @click="closeMenu">About</router-link></li>
+                <li class="navbar-item"><router-link to="/contact" class="navbar-link" @click="closeMenu">Contact</router-link></li>
             </ul>
             <div class="navbar-toggle" @click="toggleMenu">
                 <div class="bar"></div>
@@ -28,6 +30,9 @@
         methods: {
             toggleMenu() {
                 this.isMenuOpen = !this.isMenuOpen;
+            },
+            closeMenu() {
+            this.isMenuOpen = false;
             }
         }
     };
@@ -35,7 +40,7 @@
 
 <style scoped>
     .navbar {
-        background-color: navy;
+        background-color: #008080;
         color: white;
         padding: 20px 20px;
        position: relative;
@@ -56,7 +61,7 @@
         margin: 0;
         padding: 0;
         display: flex;
-        transition: max-height 0.3s easy-out;
+        transition: max-height 1s easy-out;
     }
     .navbar-item {
         margin-right: 20px;
@@ -67,7 +72,7 @@
         font-size: 18px;
     }
     .navbar-link:hover{
-        text-decoration: aqua;
+        text-decoration: none;
     }
     .navbar-toggle{
         display: none;
@@ -83,16 +88,17 @@
     
     @media (max-width: 768px) {
         .navbar-menu {
-            display: flex;
-            flex-direction: column;
-            position: absolute;
-            top: 60px;
-            left:0;
-            width: 100%;
-            background-color: navy;
-            max-height: 0;
-            overflow: hidden;
-        }
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        background-color: #008080;
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.3s ease-out;
+    }
         .navbar-menu.open {
             /* display:flex; */
             max-height: 200px;
