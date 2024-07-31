@@ -5,9 +5,16 @@
                     MyApp              
                 </div>
             <ul :class="['navbar-menu', {open: isMenuOpen}]">
-                <li class="navbar-item"><router-link to="/" class="navbar-link" @click="closeMenu" >Home</router-link></li>
-                <li class="navbar-item"><router-link to="/about" class="navbar-link" @click="closeMenu">About</router-link></li>
-                <li class="navbar-item"><router-link to="/contact" class="navbar-link" @click="closeMenu">Contact</router-link></li>
+                <li class="navbar-item">
+                    <a href="#home" class="navbar-link" @click="closeMenu">Home</a>
+                </li>
+                <li class="navbar-item">                   
+                    <a href="#about" class="navbar-link" @click="closeMenu">About</a>
+                </li>
+                <li class="navbar-item">
+                    <!-- <router-link to="" class="navbar-link" @click="closeMenu">Contact</router-link> -->
+                    <a href="#contact" class="navbar-link" @click="closeMenu">Contact</a>
+                </li>
             </ul>
             <div class="navbar-toggle" @click="toggleMenu">
                 <div class="bar"></div>

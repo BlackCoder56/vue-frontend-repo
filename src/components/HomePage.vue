@@ -1,7 +1,8 @@
 <template>
-    <div>
-        <h1>Home Page</h1>
-    </div>
+    <section id="home" class="section">
+    <h2>Home</h2>
+    <p>Welcome to the Home section!</p>
+  </section>
 </template>
 
 <script>
@@ -9,3 +10,10 @@
         name: 'HomePage'
     };
 </script>
+
+<style scoped>
+.section {
+  padding: 50px 20px;
+  min-height: 100vh;
+}
+</style>

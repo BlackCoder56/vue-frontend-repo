@@ -1,7 +1,7 @@
 <template>
-    <div class="contact-page">
-      <ContactFormPage />
-    </div>
+    <section id="contact" class="section">
+            <ContactFormPage />      
+    </section>
   </template>
   
   <script>
@@ -17,13 +17,10 @@
   </script>
   
   <style scoped>
-    .contact-page {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: calc(100vh - 100px); /* Adjust for navbar height */
-    padding: 10px; /* Reduce padding to decrease space */
-    background-color: #e0f7fa;
+  .section {
+  padding: 50px 20px;
+  min-height: 100vh;
 }
+    
 </style>
   
