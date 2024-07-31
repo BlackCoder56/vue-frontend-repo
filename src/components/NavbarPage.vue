@@ -50,6 +50,7 @@
         background-color: #008080;
         color: white;
         padding: 20px 20px;
+       
        position: relative;
     }
 
@@ -91,8 +92,7 @@
         height:3px;
         background-color: white;
         margin: 4px 0;
-    }
-    
+    }    
     @media (max-width: 768px) {
         .navbar-menu {
         display: flex;

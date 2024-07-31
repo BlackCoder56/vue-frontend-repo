@@ -51,14 +51,13 @@
   
   <style scoped>
   .contact-form {
-    /* width: 90%; */
-    max-width: 600px;
+    width: 90%;
+    max-width: 600px;    
     margin: 0 auto;
-    /* margin: 20px auto;
-    padding: 20px;
+    padding:20px;    
     background-color: #f9f9f9;
     border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   }
   .contact-form h1 {
     text-align: center;
@@ -75,11 +74,11 @@
   }
   .form-group input,
   .form-group textarea {
-    width: 100%;
+    width:95%;    
     padding: 8px;
     margin-top: 3px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
+    border: 1px solid hsl(0, 0%, 80%);
+    border-radius: 4px;   
   }
   .form-group input:focus,
     .form-group textarea:focus {
@@ -92,8 +91,9 @@
   }
   button {
     display: block;
-    width: 100%;
+    width: 50%;
     padding: 10px 20px;
+    margin: auto;
     background-color: #008080;
     color: white;
     border: none;
@@ -104,5 +104,24 @@
   button:hover {
     background-color: #006666;
   }
+  @media (max-width: 768px) {
+    .form-group input,
+    .form-group textarea {
+      width:92%;    
+      padding: 8px;
+      margin-top: 3px;
+      border: 1px solid hsl(0, 0%, 80%);
+      border-radius: 4px;   
+    }
+    .contact-form {   
+      padding:20px; 
+    }
+    button {
+     width: 100%;   
+     margin: auto; 
+  }
+
+  }
+  
   </style>
   

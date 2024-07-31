@@ -15,5 +15,6 @@
 .section {
   padding: 50px 20px;
   min-height: 100vh;
+  
 }
 </style>
