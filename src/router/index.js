@@ -23,8 +23,8 @@ const routes = [
 ]
 
 const router = createRouter({
-  history: createWebHashHistory(process.env.Base_URL),
+  history: createWebHashHistory(),
   routes
-})
+});
 
-export default router
+export default router;

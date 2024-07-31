@@ -2,7 +2,10 @@
   <div id="app">
     <NavbarPage />
     <div class="content">
-      <router-view />
+      <HomePage />
+      <AboutPage />
+      <ContactPage />
+        <!-- <router-view /> -->
     </div>    
     <FooterPage />
   </div>  
@@ -10,12 +13,19 @@
 
 <script>
   import NavbarPage from './components/NavbarPage.vue';
+  import HomePage from './components/HomePage.vue';
+  import AboutPage from './components/AboutPage.vue';
+  import ContactPage from './components/ContactPage.vue';
   import FooterPage from './components/footerPage.vue';
+  
   export default {
     name: 'App',
     components: {
-      NavbarPage,
-      FooterPage
+      NavbarPage,      
+      FooterPage,
+      HomePage,
+      AboutPage,
+      ContactPage
     }
   };
 </script>
@@ -36,6 +46,10 @@
   }
   .content {
   flex: 1;
-  margin-bottom: 0;
+  margin: 0; /* Ensure there is no extra margin */
+  padding: 0; /* Ensure there is no extra padding */
+}
+html {
+  scroll-behavior: smooth;
 }
 </style>
