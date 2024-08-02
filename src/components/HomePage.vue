@@ -15,8 +15,9 @@
               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque imperdiet.</p>        
               <p>
                 <i class="pub-dt">
-                  Published: 29/07/2024
-                </i>
+                  Published: <strong>29/07/2024</strong>
+                  | Author: <strong>Alisson Asiimwe</strong>
+                </i>                
               </p>     
             </div>            
           </div>
@@ -29,7 +30,8 @@
               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque imperdiet.</p>
               <p >
                 <i class="pub-dt">
-                  Published: 27/07/2024
+                  Published: <strong>27/07/2024</strong>
+                  | Author: <strong>Musumba Emily</strong>
                 </i>
               </p>    
             </div>
@@ -43,7 +45,8 @@
               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque imperdiet.</p>
               <p >
                 <i class="pub-dt">
-                  Published: 26/07/2024
+                  Published: <strong>26/07/2024</strong>
+                  | Author: <strong>SSebakumba Martin</strong>
                 </i>
               </p>    
             </div>
@@ -57,7 +60,8 @@
               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque imperdiet.</p>
               <p >
                 <i class="pub-dt">
-                  Published: 25/07/2024
+                  Published: <strong>25/07/2024</strong>
+                  | Author: <strong>Mugisa Andrew</strong>
                 </i>
               </p>    
             </div>
@@ -76,11 +80,11 @@
 
 <style scoped>
 .section {
-  padding: 50px 20px;
-  min-height: 100vh;
+  padding: 120px 20px;
+  /* min-height: 100vh; */
 }
 .pub-dt{
-  font-size: 15px;
+  font-size: 13px;
   text-decoration: wavy;
 }
 .update img {
@@ -123,6 +127,7 @@
 .recent-updates {
   margin-top: 50px;
   width: 80%;
+  margin: 30px auto;
   /* max-width: 800px; */
 }
 .recent-updates h2 {
@@ -152,6 +157,10 @@
   color: #333;
 }
 @media (max-width: 768px) {
+  .section {
+  padding: 50px 20px 0px 20px;
+  /* min-height: 100vh; */
+}
   .hero h1 {
     font-size: 28px;
   }
@@ -171,6 +180,12 @@
   margin-top: 50px;
   width: 100%;
   max-width: 800px;
+}
+.update img {
+  display:none;
+}
+.pub-dt{
+  font-size: 10px; 
 }
   .updates-container {
     width:100%;
