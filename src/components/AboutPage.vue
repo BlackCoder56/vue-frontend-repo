@@ -41,8 +41,8 @@
   min-height: 100vh;
 }
 .about-content{
-  width: 90%;
-  max-width: 1000px;    
+  /* width: 90%; */
+  /* max-width: 1000px;     */
   margin: 0 auto;
 }
 h2{
@@ -89,7 +89,17 @@ about-container {
 @media (max-width: 768px) {
   .about-item {  
     margin-top:20px;
+    display: flex;
+    flex-direction: column;
   }
+  
+  .about-item img {
+  width: 100%;
+  height: auto;
+  border-radius: 4px;
+  /* margin-right: 20px; */
+  margin: 20px;
+}
 }
 
 </style>

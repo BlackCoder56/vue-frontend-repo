@@ -94,6 +94,9 @@
         margin: 4px 0;
     }    
     @media (max-width: 768px) {
+        .navbar {       
+        position: relative;
+    }
         .navbar-menu {
         display: flex;
         flex-direction: column;
@@ -116,6 +119,7 @@
             margin-bottom: 10px;
             text-align: left;
         }
+       
         .navbar-toggle {
             display: flex;
         }
