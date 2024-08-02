@@ -37,7 +37,7 @@
 
 <style scoped>
 .section {
-  padding: 20px 20px;   
+  padding: 50px 20px;   
   min-height: 100vh;
 }
 .about-content{
@@ -56,7 +56,7 @@ about-container {
 }
 .about-item {
   display: flex;
-  margin: 40px auto;
+  margin: 20px auto;
   align-items: center;
   background: white;
   border: 1px solid #ddd; 
@@ -70,7 +70,7 @@ about-container {
   height: 200px;
   border-radius: 4px;
   /* margin-right: 20px; */
-  margin: 20px;
+  margin: 20px;  
 }
 .about-text {
   flex: 1;
@@ -88,18 +88,30 @@ about-container {
 
 @media (max-width: 768px) {
   .about-item {  
-    margin-top:20px;
+    margin-top:10px;
     display: flex;
     flex-direction: column;
-  }
-  
+
+  }  
   .about-item img {
-  width: 100%;
+  width: 90%;
   height: auto;
-  border-radius: 4px;
-  /* margin-right: 20px; */
-  margin: 20px;
+  border-radius: 4px;  
+  margin-bottom: 10px;
 }
+.about-text {
+  flex: 1;
+  margin:10px 20px;
+}
+.about-text p {
+  font-size: 14px;
+}
+.about-text h3 {
+  margin-top: 10px;
+  font-size: 18px;
+  color: #008080;
+}
+
 }
 
 </style>
