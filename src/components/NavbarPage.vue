@@ -49,9 +49,9 @@
     .navbar {
         background-color: #008080;
         color: white;
-        padding: 20px 20px;
-       
-       position: relative;
+        padding: 20px 20px;       
+        width:100%;
+        position: fixed;
     }
 
     .navbar-container{
@@ -72,7 +72,7 @@
         transition: max-height 1s easy-out;
     }
     .navbar-item {
-        margin-right: 20px;
+        margin-right:50px;
     }
     .navbar-link {
         color:white;

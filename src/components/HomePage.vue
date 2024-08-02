@@ -80,8 +80,8 @@
 
 <style scoped>
 .section {
-  padding: 10px 20px;
- min-height: 100vh;
+  padding: 120px 20px;
+  /* min-height: 100vh; */
 }
 .pub-dt{
   font-size: 13px;
@@ -127,6 +127,7 @@
 .recent-updates {
   margin-top: 50px;
   width: 80%;
+  margin: 30px auto;
   /* max-width: 800px; */
 }
 .recent-updates h2 {
