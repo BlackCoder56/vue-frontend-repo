@@ -19,8 +19,7 @@
   <style scoped>
   .section {
   padding: 200px 20px;
-  /* min-height: 100vh; */
-  
+  /* min-height: 100vh; */  
 }
     
 </style>

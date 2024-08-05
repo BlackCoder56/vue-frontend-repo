@@ -50,8 +50,9 @@
         background-color: #008080;
         color: white;
         padding: 20px 20px;       
-        width:100%;
-        position: fixed;
+        /* width:100%; */
+        /* position: fixed; */
+        position: relative;
     }
 
     .navbar-container{
@@ -94,6 +95,7 @@
         margin: 4px 0;
     }    
     @media (max-width: 768px) {
+                 
         .navbar {       
         position: relative;
     }
